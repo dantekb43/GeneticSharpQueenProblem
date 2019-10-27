@@ -24,7 +24,7 @@ namespace chessQueenProblem
             var fitness = new chessQueenFitness();
             var chromosome = new chessQueenChromosome();
 
-            var population = new Population(5000, 7000, chromosome);
+            var population = new Population(5, 40, chromosome);
 
             var ga = new GeneticAlgorithm(population, fitness, selection, crossover, mutation);
 
